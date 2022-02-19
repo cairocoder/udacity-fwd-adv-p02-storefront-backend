@@ -9,39 +9,39 @@ These are the notes from a meeting with the frontend developer that describe wha
 ### Users
 
 -   Index [token required]
-    (http://localhost:5000/api/v1/users) GET and Authorization Header including token
+    (http://localhost:3000/api/v1/users) GET and Authorization Header including token
 -   Show [args: id] (token required)
-    (http://localhost:5000/api/v1/users/:id) GET and Authorization Header including token
+    (http://localhost:3000/api/v1/users/:id) GET and Authorization Header including token
 -   Create [args: User](token required)
-    (http://localhost:5000/api/v1/users) POST with body including {user_name,first_name,last_name,password} and Authorization Header including token
+    (http://localhost:3000/api/v1/users) POST with body including {user_name,first_name,last_name,password} and Authorization Header including token
 -   Create [args: Admin] (token not required)
-    (http://localhost:5000/api/v1/users/admin) POST with body including {user_name,first_name,last_name,password} for admin account no token required
+    (http://localhost:3000/api/v1/users/admin) POST with body including {user_name,first_name,last_name,password} for admin account no token required
 
 ### Products
 
 -   Index
-    (http://localhost:5000/api/v1/products) GET
+    (http://localhost:3000/api/v1/products) GET
 -   Show (args: product id)
-    (http://localhost:5000/api/v1/products/:id) GET
+    (http://localhost:3000/api/v1/products/:id) GET
 -   Create [args: Product](token required)
-    (http://localhost:5000/api/v1/products) with body including {name, price} and Authorization Header including token
+    (http://localhost:3000/api/v1/products) with body including {name, price} and Authorization Header including token
 
 ### Orders
 
 -   Create [args: user_id, order_status](token required)
-    (http://localhost:5000/api/v1/orders) POST with body including { user_id, order_status}
+    (http://localhost:3000/api/v1/orders) POST with body including { user_id, order_status}
 -   AddProduct [args: product_id, quantity](token required)
-    (http://localhost:5000/api/v1/orders/:orderID/products) POST with body including { product_id, quantity}
+    (http://localhost:3000/api/v1/orders/:orderID/products) POST with body including { product_id, quantity}
 -   Index [token required] to display list of all orders
-    (http://localhost:5000/api/v1/orders) GET method with Authorization Header including token
+    (http://localhost:3000/api/v1/orders) GET method with Authorization Header including token
 -   Show [args: id](token required)
-    (http://localhost:5000/api/v1/orders/:id) GET and Authorization Header including token
+    (http://localhost:3000/api/v1/orders/:id) GET and Authorization Header including token
 -   Current Order by user [args: user id](token required)
-    (http://localhost:5000/api/v1/orders/:userID) GET and Authorization Header including token
+    (http://localhost:3000/api/v1/orders/:userID) GET and Authorization Header including token
 
 ## Data Shapes
 
-![database schema](https://res.cloudinary.com/arizk76/image/upload/v1642267913/store_front_bgdwci.jpg)
+![Database Schema](https://serving.photos.photobox.com/81833594c8c8968e81853cd3fcbb27c813ad5235ac58e99f93e354b1305fca6018a730fb.jpg)
 
 ### Product
 

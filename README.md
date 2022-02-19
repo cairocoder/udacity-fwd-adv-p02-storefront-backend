@@ -45,7 +45,7 @@ Run project in prod mode
 npm run start
 ```
 
-Run Tests
+Run tests
 
 ```bash
 npm run test
