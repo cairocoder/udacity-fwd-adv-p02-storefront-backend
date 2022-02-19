@@ -63,13 +63,14 @@ npm run prettier
 
 ### Database details
 
-For development and Testing
+```bash
 HOST: 127.0.0.1
 PORT: 5432
 USER: postgres
 PASSWD: postgres
 DB Name: store_dev (dev)
 DB Name: store_test (prod)
+```
 
 ## Endpoints
 
